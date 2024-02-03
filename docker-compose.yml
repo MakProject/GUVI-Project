@@ -1,0 +1,12 @@
+services:
+  webapp:
+    image: webapp
+    container_name: webapp
+    ports:
+      - 80:80
+    volumes:
+      - webapp-data:/usr/share/nginx/html/
+
+volumes:
+  webapp-data:
+    external: true

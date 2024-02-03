@@ -1,0 +1,19 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname', 'severity']
+  repeat_interval: 1m
+  receiver: 'email-notifier'
+
+receivers:
+- name: 'email-notifier'
+  email_configs:
+  - to: 'itsmeashikmak@gmail.com'
+    from: 'itsmeashikmak@gmail.com'
+    smarthost: 'smtp.gmail.com:587'
+    auth_username: 'itsmeashikmak@gmail.com'
+    auth_identity: 'itsmeashikmak@gmail.com'
+    auth_password: 'tyox ezmn pksm hsgm'
+    send_resolved: true
+    require_tls: true

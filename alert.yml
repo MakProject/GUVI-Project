@@ -1,0 +1,11 @@
+groups:
+  - name: WebAppAlert
+    rules:
+      - alert: NginxDown
+        expr: nginx_up == 0
+        for: 5s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Nginx is down"
+          description: "The Nginx service is not responding."
