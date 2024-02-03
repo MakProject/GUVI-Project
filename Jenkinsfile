@@ -5,7 +5,7 @@ pipeline {
 	
         stage('Build and Push to Production') {
 	    when {
-                expression { env.GIT_BRANCH == 'origin/main' }
+                expression { env.GIT_BRANCH == 'origin/master' }
             }
             steps {
                 script {
