@@ -14,6 +14,6 @@ receivers:
     smarthost: 'smtp.gmail.com:587'
     auth_username: 'itsmeashikmak@gmail.com'
     auth_identity: 'itsmeashikmak@gmail.com'
-    auth_password: 'tyox ezmn pksm hsgm'
+    auth_password: ''
     send_resolved: true
     require_tls: true
